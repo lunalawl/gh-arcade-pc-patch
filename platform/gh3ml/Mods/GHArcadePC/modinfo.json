@@ -1,0 +1,8 @@
+{
+  "name": "arcade",
+  "author": "lunalawl",
+  "displayName": "Guitar Hero Arcade - PC Patch",
+  "description": "Allows Guitar Hero Arcade to run using the GH3PC exe, skipping CRC and diagnostic checks",
+  "version": "1.0",
+  "tags" : 0
+}

@@ -1,0 +1,20 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build_gh3ml:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build Files
+        run: scripts/windows/build_gh3ml.bat
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: GHArcadePC
+          path: out
