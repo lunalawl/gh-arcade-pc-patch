@@ -7,19 +7,19 @@ bootup_do_memcard_sequence_fs = {
 	actions = [
 		{
 			action = memcard_sequence_save_success
-			flow_state = main_menu_fs
+			flow_state = attract_sequence_start_fs
 		}
 		{
 			action = memcard_sequence_save_failed
-			flow_state = main_menu_fs
+			flow_state = attract_sequence_start_fs
 		}
 		{
 			action = memcard_sequence_load_success
-			flow_state = main_menu_fs
+			flow_state = attract_sequence_start_fs
 		}
 		{
 			action = memcard_sequence_load_failed
-			flow_state = main_menu_fs
+			flow_state = attract_sequence_start_fs
 		}
 	]
 }
